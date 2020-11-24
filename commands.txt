@@ -8,6 +8,12 @@ az account set -s SUBSCRIPTION_NAME
 # Go into the remote-setup folder
 cd remote-setup
 
+# Set a GitHub token
+
+export GITHUB_TOKEN=TOKEN_VALUE
+
+$env:GITHUB_TOKEN="TOKEN_VALUE"
+
 ## Let's initialize our remote setup
 terraform init
 
