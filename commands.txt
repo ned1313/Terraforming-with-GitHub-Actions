@@ -1,0 +1,20 @@
+## You're going to need the Azure CLI
+## And you're going to need Azure AD permissions to create a service principal
+
+## Log into Azure and select the correct subscription
+az login
+az account set -s SUBSCRIPTION_NAME
+
+# Go into the remote-setup folder
+cd remote-setup
+
+## Let's initialize our remote setup
+terraform init
+
+## Now plan and apply the configuration
+terraform plan -out remote.tfplan
+terraform apply remote.tfplan
+
+## Now we are going to add secrets to our GitHub repo based on the outputs
+
+## From here we should be able to create a branch, pull request, and push to create infrastructure
