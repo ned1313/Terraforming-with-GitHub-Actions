@@ -142,7 +142,7 @@ output "ARM_SAS_TOKEN" {
 }
 
 output "ARM_CLIENT_ID" {
-    value = azuread_service_principal.gh_actions.object_id
+    value = azuread_service_principal.gh_actions.application_id
 }
 
 output "ARM_CLIENT_SECRET" {
