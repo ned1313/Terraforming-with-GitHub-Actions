@@ -66,7 +66,7 @@ module "network" {
 
   tags = {
     environment = "North Pole"
-    costcenter  = "Elves"
+    costcenter  = "Reindeer"
     project     = "Festive Tech Calendar 2020"
   }
 
