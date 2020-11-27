@@ -21,10 +21,24 @@ terraform init
 terraform plan -out remote.tfplan
 terraform apply remote.tfplan
 
-## Now we are going to add secrets to our GitHub repo based on the outputs
-
 ## From here we should be able to create a branch, pull request, and push to create infrastructure
 
 git checkout -B reindeer
 
-## We can also directly interact with the state by going to the main directory and running the following
+## Make a change and push the commit to remote
+
+## See it FAIL
+
+## Fix and push again
+
+## Success!
+
+## Create a PR and wait for actions to complete
+
+## Merge the PR and see creation of infrastructure
+
+## Create a new branch to fix a tag value
+
+## Go through the process again
+
+
